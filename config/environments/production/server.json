@@ -1,6 +1,6 @@
 {
-  "host": "calm-mesa-88182.herokuapp.com/",
-  "port": 1337,
+  "host": "${process.env.APP_HOST || '127.0.0.1'}",
+  "port": "${process.env.NODE_PORT || 1337}",
   "autoReload": {
     "enabled": false
   },
